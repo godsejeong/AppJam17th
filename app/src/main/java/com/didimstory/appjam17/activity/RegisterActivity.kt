@@ -1,11 +1,11 @@
 package com.didimstory.appjam17.activity
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.telecom.Call
 import android.widget.Toast
 import com.didimstory.appjam17.R
-import com.didimstory.appjam17.data.user
-import com.didimstory.appjam17.utils.Utils
 import kotlinx.android.synthetic.main.activity_register.*
 
 class RegisterActivity : AppCompatActivity() {
@@ -19,19 +19,8 @@ class RegisterActivity : AppCompatActivity() {
 
         registerButton.setOnClickListener {
 
-
-
-            if (editText1.text.toString().isNotEmpty() && editText2.text.toString().isNotEmpty() && editText3.text.toString().isNotEmpty() && editText4.text.toString().isNotEmpty() && editText5.text.toString().isNotEmpty() && editText6.text.toString().isNotEmpty()){
-
-
-                if (editText4.text.toString() == editText5.text.toString()){
-                val user = user(editText1.text.toString(), editText2.text.toString(), editText3.text.toString()
-                , editText4.text.toString(), editText5.text.toString(), editText6.text.toString()
-                )}else{
-                    Toast.makeText(this@RegisterActivity, "비밀번호가 같지 않습니다.", Toast.LENGTH_SHORT).show()
-                }
-
-            }
+            startActivity(Intent(this@RegisterActivity, LoginActivity::class.java))
+            Toast.makeText(this@RegisterActivity, "회원가입 성공", Toast.LENGTH_LONG).show()
 
         }
 
@@ -56,4 +45,5 @@ class RegisterActivity : AppCompatActivity() {
         }
 
     }
+
 }

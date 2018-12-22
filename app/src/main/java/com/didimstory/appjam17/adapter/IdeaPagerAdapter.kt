@@ -4,8 +4,6 @@ import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager
 import android.support.v4.app.FragmentStatePagerAdapter
 import com.didimstory.appjam17.Fragment.*
-import com.didimstory.appjam17.fragment.ITFragment
-import com.didimstory.appjam17.fragment.LendFragment
 
 class IdeaPagerAdapter(fm: FragmentManager?, tabCount : Int) : FragmentStatePagerAdapter(fm) {
     private var tabCount: Int = 8

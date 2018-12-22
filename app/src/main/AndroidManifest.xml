@@ -13,7 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".activity.MainActivity"></activity>
+        <activity android:name=".activity.MainActivity" />
         <activity
             android:name=".activity.SplashActivity"
             android:theme="@style/NoActionBar">
@@ -30,7 +30,9 @@
             android:name=".activity.LoginActivity"
             android:theme="@style/NoActionBar"
             android:windowSoftInputMode="adjustPan" />
-        <activity android:name=".activity.AddActivity"></activity>
+        <activity android:name=".activity.AddActivity" />
+        <activity android:name=".activity.Budget_Management_Activity"
+            android:label="@string/good"/>
     </application>
 
 </manifest>

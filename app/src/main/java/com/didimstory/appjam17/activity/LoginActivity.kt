@@ -61,9 +61,6 @@ class LoginActivity : AppCompatActivity() {
                     editor.putString("token",response.body()!!.User.token)
                     editor.commit()
 
-
-                    출처@ http@ //arabiannight.tistory.com/entry/안드로이드Android-SharedPreferences-사용-예제 [아라비안나이트]
-
                     startActivity(Intent(this@LoginActivity, MainActivity::class.java))
                     finish()
                     Toast.makeText(applicationContext, "로그인이 완료되었습니다.", Toast.LENGTH_SHORT).show()

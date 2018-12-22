@@ -5,14 +5,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RegisterActivity"
+    tools:context=".activity.RegisterActivity"
     >
 
     <android.support.design.widget.TextInputLayout
         android:layout_centerHorizontal="true"
         android:id="@+id/textInputLayout1"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content">
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
 
         <EditText
             android:id="@+id/editText1"
@@ -26,8 +27,9 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@id/textInputLayout1"
         android:id="@+id/textInputLayout2"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content">
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
 
         <EditText
             android:id="@+id/editText2"
@@ -41,8 +43,9 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@id/textInputLayout2"
         android:id="@+id/textInputLayout3"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content">
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
 
         <EditText
             android:id="@+id/editText3"
@@ -56,13 +59,15 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@id/textInputLayout3"
         android:id="@+id/textInputLayout4"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content">
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
 
         <EditText
             android:id="@+id/editText4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="textPassword"
             android:hint="@string/password" />
 
     </android.support.design.widget.TextInputLayout>
@@ -71,13 +76,15 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@id/textInputLayout4"
         android:id="@+id/textInputLayout5"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content">
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
 
         <EditText
             android:id="@+id/editText5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="textPassword"
             android:hint="@string/passwordTest" />
 
     </android.support.design.widget.TextInputLayout>
@@ -86,8 +93,9 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@id/textInputLayout5"
         android:id="@+id/textInputLayout6"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content">
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
 
         <EditText
             android:id="@+id/editText6"
@@ -99,25 +107,23 @@
 
 
 
-    <View
-        android:layout_below="@+id/textInputLayout6"
-        android:id="@+id/view_1"
-        android:layout_width="20dp"
-        android:layout_height="4dp" />
+
 
     <TextView
         android:id="@+id/terms"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/view_1"
+        android:layout_below="@+id/textInputLayout6"
         android:text="@string/terms"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"/>
 
     <View
         android:layout_below="@id/terms"
         android:id="@+id/View_2"
         android:layout_width="20dp"
-        android:layout_height="4dp" />
+        android:layout_height="4dp"
+        android:layout_marginTop="10dp"/>
     <LinearLayout
         android:background="#4B5CFF"
         android:layout_below="@id/View_2"
@@ -149,15 +155,17 @@
     <View
         android:layout_below="@id/terms_first"
         android:id="@+id/View_3"
-        android:layout_width="20dp"
-        android:layout_height="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/darker_gray"
         />
 
     <ScrollView
+        android:layout_marginTop="5dp"
         android:id="@+id/scrollView"
         android:layout_below="@+id/View_3"
         android:layout_width="match_parent"
-        android:layout_height="90dp">
+        android:layout_height="wrap_content">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -294,6 +302,7 @@
         android:layout_width="20dp"
         android:layout_height="5dp" />
     <Button
+        android:layout_marginTop="30dp"
         android:id="@+id/registerButton"
         android:layout_below="@+id/View_4"
         android:layout_width="250dp"
