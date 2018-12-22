@@ -37,6 +37,10 @@ class RegisterActivity : AppCompatActivity() {
 
         image1.setOnClickListener {
             image1.setImageResource(R.drawable.terms)
+            image2.setImageResource(R.drawable.terms)
+            image3.setImageResource(R.drawable.terms)
+            image4.setImageResource(R.drawable.terms)
+            image5.setImageResource(R.drawable.terms)
         }
         image2.setOnClickListener {
             image2.setImageResource(R.drawable.terms)
