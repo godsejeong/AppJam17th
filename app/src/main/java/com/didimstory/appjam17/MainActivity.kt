@@ -6,9 +6,8 @@ import android.support.design.widget.BottomNavigationView
 import android.support.v4.app.ActivityCompat
 import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager
-import android.view.MenuItem
-import android.widget.FrameLayout
 import android.widget.Toast
+import com.didimstory.appjam17.Fragment.ITFragment
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
