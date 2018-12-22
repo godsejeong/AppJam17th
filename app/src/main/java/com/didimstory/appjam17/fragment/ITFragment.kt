@@ -1,4 +1,4 @@
-package com.didimstory.appjam17.fragment
+package com.didimstory.appjam17.Fragment
 
 
 import android.os.Bundle

@@ -14,4 +14,11 @@
     <string name="findPassword">비밀번호 찾기</string>
     <string name="registerText">아직 회원이 아니신가요?</string>
     <string name="register_button">회원가입</string>
+    <string name="terms1">전체 이용약관에 동의합니다.  (필수)</string>
+    <string name="Terms_of_service">이용약관 (필수)</string>
+    <string name="Privacy">개인정보취급방침 (필수)</string>
+    <string name="SNS">SNS 수신 동의 (선택)</string>
+    <string name="email_terms">이메일 수신 동의 (선택)</string>
+    <string name="ok">가입 완료</string>
+    <string name="terms">약관 동의</string>
 </resources>
