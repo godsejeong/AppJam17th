@@ -41,6 +41,8 @@ class ProjectFragment : Fragment() {
         view.projectTab.addTab(view.projectTab.newTab().setText("대여 및 배달"))
         view.projectTab.addTab(view.projectTab.newTab().setText("기타"))
 
+
+
         view.projectTab.tabGravity = TabLayout.GRAVITY_FILL
 
         val pageradapter = IdeaPagerAdapter(childFragmentManager,view.projectTab.tabCount)
