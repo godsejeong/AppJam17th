@@ -8,7 +8,6 @@ import android.support.v4.app.ActivityCompat
 import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager
 import android.widget.Toast
-import com.didimstory.appjam17.Fragment.ITFragment
 import com.didimstory.appjam17.Fragment.IdeaFragment
 import com.didimstory.appjam17.Fragment.ProjectFragment
 import kotlinx.android.synthetic.main.activity_main.*

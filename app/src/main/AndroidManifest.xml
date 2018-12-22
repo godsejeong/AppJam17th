@@ -16,7 +16,6 @@
         <activity
             android:name=".SplashActivity"
             android:theme="@style/NoActionBar" >
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -24,13 +23,13 @@
             </intent-filter>
         </activity>
 
+
+
         <activity
             android:name=".RegisterActivity"
-            android:label="@string/register">
-        </activity>
+            android:label="@string/register"></activity>
 
         <activity android:name=".LoginActivity"></activity>
-
     </application>
 
 </manifest>
