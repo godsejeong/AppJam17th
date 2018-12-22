@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
 
         fragmentManager = supportFragmentManager
         bottomNavigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
-        fragment = ITFragment.newInstance()
+//        fragment = ITFragment.newInstance()
         val transaction = fragmentManager.beginTransaction()
         transaction.replace(R.id.content, fragment).commit()
 
@@ -32,35 +32,38 @@ class MainActivity : AppCompatActivity() {
 
     val mOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
         when (item.itemId) {
-            R.id.actionIT -> {
 
-            }
-            R.id.actionSprots -> {
-
-            }
-
-            R.id.actionEducation -> {
-
-            }
-            R.id.actionSell -> {
-
-            }
-
-            R.id.actionShowpping -> {
-
-            }
-
-            R.id.actionCook -> {
-
-            }
-
-            R.id.actionLend -> {
-
-            }
-
-            R.id.actionAuther-> {
-
-            }
+//            R.id.actionIT -> {
+//
+//            }
+//
+//            R.id.actionSprots -> {
+//
+//            }
+//
+//            R.id.actionEducation -> {
+//
+//            }
+//
+//            R.id.actionSell -> {
+//
+//            }
+//
+//            R.id.actionShowpping -> {
+//
+//            }
+//
+//            R.id.actionCook -> {
+//
+//            }
+//
+//            R.id.actionLend -> {
+//
+//            }
+//
+//            R.id.actionAuther-> {
+//
+//            }
         }
         val transaction = fragmentManager.beginTransaction()
                 transaction.replace(R.id.content,fragment).commit()
