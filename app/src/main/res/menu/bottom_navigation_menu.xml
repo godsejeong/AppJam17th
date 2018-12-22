@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_main"
+        android:enabled="true"
+        android:title="home"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/action_cody"
+        android:enabled="true"
+        android:title="cody"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/action_sale"
+        android:enabled="true"
+        android:title="sale"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/action_locker"
+        android:enabled="true"
+        android:title="locker"
+        app:showAsAction="ifRoom"/>
+
+
+</menu>
