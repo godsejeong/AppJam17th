@@ -3,28 +3,51 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:id="@+id/action_main"
+        android:id="@+id/actionIT"
         android:enabled="true"
-        android:title="home"
+        android:title="IT"
         app:showAsAction="ifRoom"/>
 
     <item
-        android:id="@+id/action_cody"
+        android:id="@+id/actionSprots"
         android:enabled="true"
-        android:title="cody"
+        android:title="스포츠"
         app:showAsAction="ifRoom"/>
 
     <item
-        android:id="@+id/action_sale"
+        android:id="@+id/actionEducation"
         android:enabled="true"
-        android:title="sale"
+        android:title="교육"
         app:showAsAction="ifRoom"/>
 
     <item
-        android:id="@+id/action_locker"
+        android:id="@+id/actionSell"
         android:enabled="true"
-        android:title="locker"
+        android:title="유통 및 판매"
         app:showAsAction="ifRoom"/>
 
+    <item
+        android:id="@+id/actionShowpping"
+        android:enabled="true"
+        android:title="쇼핑"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/actionCook"
+        android:enabled="true"
+        android:title="외식 및 요리"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/actionLend"
+        android:enabled="true"
+        android:title="대여 및 배달"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/actionAuther"
+        android:enabled="true"
+        android:title="기타"
+        app:showAsAction="ifRoom"/>
 
 </menu>
