@@ -1,14 +1,12 @@
-package com.didimstory.appjam17
+package com.didimstory.appjam17.activity
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.support.v7.app.ActionBar
 
-class RegisterActivity : AppCompatActivity() {
+class AddActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_register)
-
+        setContentView(R.layout.activity_add)
     }
 }

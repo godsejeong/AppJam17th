@@ -24,7 +24,7 @@ class IdeaPagerAdapter(fm: FragmentManager?, tabCount : Int) : FragmentStatePage
 
             5 -> ITFragment.newInstance()
 
-            6 -> LendFragment.newInstance()
+            6 -> ITFragment.newInstance()
 
             7 -> ITFragment.newInstance()
 

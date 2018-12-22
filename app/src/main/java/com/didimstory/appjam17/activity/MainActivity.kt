@@ -1,19 +1,22 @@
-package com.didimstory.appjam17
+package com.didimstory.appjam17.activity
 
-import android.graphics.Color
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.support.design.widget.BottomNavigationView
 import android.support.v4.app.ActivityCompat
 import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager
 import android.widget.Toast
 import com.didimstory.appjam17.Fragment.IdeaFragment
 import com.didimstory.appjam17.Fragment.ProjectFragment
+import com.didimstory.appjam17.R
+import com.didimstory.appjam17.adapter.IdeaPagerAdapter
 import kotlinx.android.synthetic.main.activity_main.*
+import android.support.v7.widget.LinearLayoutManager
+
+
 
 class MainActivity : AppCompatActivity() {
-
     lateinit var fragment : Fragment
     lateinit var fragmentManager: FragmentManager
 
@@ -23,12 +26,18 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        fragmentManager = supportFragmentManager
 
+        fragmentManager = supportFragmentManager
         fragment = IdeaFragment.newInstance()
+
         val transaction = fragmentManager.beginTransaction()
         transaction.replace(R.id.mainLayout,fragment).commit()
         mainIdea.setTextColor(this.resources.getColor(R.color.colorPrimary))
+
+        mainAddBtn.setOnClickListener {
+            startActivity(Intent(this@MainActivity, MainActivity::class.java))
+
+        }
 
         mainIdea.setOnClickListener {
             fragment = IdeaFragment.newInstance()
@@ -45,8 +54,6 @@ class MainActivity : AppCompatActivity() {
             mainIdea.setTextColor(this.resources.getColor(R.color.colorblack))
             mainProject.setTextColor(this.resources.getColor(R.color.colorPrimary))
         }
-
-
     }
 
     override fun onBackPressed() {

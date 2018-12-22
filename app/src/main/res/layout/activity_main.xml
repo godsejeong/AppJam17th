@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".activity.MainActivity">
 
     <FrameLayout
         android:id="@+id/mainLayout"
@@ -21,6 +21,7 @@
         />
 
     <ImageView
+        android:id="@+id/mainAddBtn"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:background="@drawable/bg_add"

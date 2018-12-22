@@ -7,10 +7,16 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.didimstory.appjam17.R
+import com.didimstory.appjam17.adapter.IdeaPagerAdapter
+import android.support.v7.widget.LinearLayoutManager
+//import com.didimstory.appjam17.adapter.IdeaAdapter
+import com.didimstory.appjam17.data.IdeaItem
+import kotlinx.android.synthetic.main.fragment_it.*
 
 
 class ITFragment : Fragment() {
-
+//    lateinit var adapter : IdeaAdapter
+    lateinit var item : ArrayList<IdeaItem>
     companion object {
 
         @JvmStatic
@@ -25,6 +31,11 @@ class ITFragment : Fragment() {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_it, container, false)
 
+        val mLayoutManager = LinearLayoutManager(context!!.applicationContext)
+        ideaRecyclerview.layoutManager = mLayoutManager
+
+//        adapter = IdeaAdapter(item,user.getName())
+//        ideaRecyclerview.setAdapter(adapter)
 
     }
 
