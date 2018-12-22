@@ -1,4 +1,4 @@
-package com.didimstory.appjam17.Fragment
+package com.didimstory.appjam17.fragment
 
 import android.os.Bundle
 import android.support.design.widget.TabLayout
