@@ -3,51 +3,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:id="@+id/actionIT"
+        android:id="@+id/actionIdea"
         android:enabled="true"
-        android:title="IT"
+        android:title="아이디어"
         app:showAsAction="ifRoom"/>
 
     <item
-        android:id="@+id/actionSprots"
+        android:id="@+id/actionProject"
         android:enabled="true"
-        android:title="스포츠"
+        android:title="프로젝트"
         app:showAsAction="ifRoom"/>
-
-    <item
-        android:id="@+id/actionEducation"
-        android:enabled="true"
-        android:title="교육"
-        app:showAsAction="ifRoom"/>
-
-    <item
-        android:id="@+id/actionSell"
-        android:enabled="true"
-        android:title="유통 및 판매"
-        app:showAsAction="ifRoom"/>
-
-    <item
-        android:id="@+id/actionShowpping"
-        android:enabled="true"
-        android:title="쇼핑"
-        app:showAsAction="ifRoom"/>
-
-    <item
-        android:id="@+id/actionCook"
-        android:enabled="true"
-        android:title="외식 및 요리"
-        app:showAsAction="ifRoom"/>
-
-    <item
-        android:id="@+id/actionLend"
-        android:enabled="true"
-        android:title="대여 및 배달"
-        app:showAsAction="ifRoom"/>
-
-    <item
-        android:id="@+id/actionAuther"
-        android:enabled="true"
-        android:title="기타"
-        app:showAsAction="ifRoom"/>
-
 </menu>

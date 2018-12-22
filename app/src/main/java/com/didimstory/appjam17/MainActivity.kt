@@ -1,5 +1,6 @@
 package com.didimstory.appjam17
 
+import android.graphics.Color
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.design.widget.BottomNavigationView
@@ -8,6 +9,8 @@ import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager
 import android.widget.Toast
 import com.didimstory.appjam17.Fragment.ITFragment
+import com.didimstory.appjam17.Fragment.IdeaFragment
+import com.didimstory.appjam17.Fragment.ProjectFragment
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -21,53 +24,30 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
         fragmentManager = supportFragmentManager
-        bottomNavigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
-//        fragment = ITFragment.newInstance()
+
+        fragment = IdeaFragment.newInstance()
         val transaction = fragmentManager.beginTransaction()
-        transaction.replace(R.id.content, fragment).commit()
+        transaction.replace(R.id.mainLayout,fragment).commit()
+        mainIdea.setTextColor(this.resources.getColor(R.color.colorPrimary))
 
-    }
-
-    val mOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
-        when (item.itemId) {
-
-//            R.id.actionIT -> {
-//
-//            }
-//
-//            R.id.actionSprots -> {
-//
-//            }
-//
-//            R.id.actionEducation -> {
-//
-//            }
-//
-//            R.id.actionSell -> {
-//
-//            }
-//
-//            R.id.actionShowpping -> {
-//
-//            }
-//
-//            R.id.actionCook -> {
-//
-//            }
-//
-//            R.id.actionLend -> {
-//
-//            }
-//
-//            R.id.actionAuther-> {
-//
-//            }
+        mainIdea.setOnClickListener {
+            fragment = IdeaFragment.newInstance()
+            val transaction = fragmentManager.beginTransaction()
+            transaction.replace(R.id.mainLayout,fragment).commit()
+            mainIdea.setTextColor(this.resources.getColor(R.color.colorPrimary))
+            mainProject.setTextColor(this.resources.getColor(R.color.colorblack))
         }
-        val transaction = fragmentManager.beginTransaction()
-                transaction.replace(R.id.content,fragment).commit()
-        true
+
+        mainProject.setOnClickListener {
+            fragment = ProjectFragment.newInstance()
+            val transaction = fragmentManager.beginTransaction()
+            transaction.replace(R.id.mainLayout,fragment).commit()
+            mainIdea.setTextColor(this.resources.getColor(R.color.colorblack))
+            mainProject.setTextColor(this.resources.getColor(R.color.colorPrimary))
+        }
+
+
     }
 
     override fun onBackPressed() {
