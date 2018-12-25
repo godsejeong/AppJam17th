@@ -11,6 +11,7 @@ import android.view.ViewGroup
 
 import com.didimstory.appjam17.R
 import com.didimstory.appjam17.adapter.IdeaPagerAdapter
+import com.didimstory.appjam17.adapter.ProjectPagerAdapter
 import kotlinx.android.synthetic.main.fragment_lend.view.*
 import kotlinx.android.synthetic.main.fragment_project.view.*
 
@@ -42,10 +43,9 @@ class ProjectFragment : Fragment() {
         view.projectTab.addTab(view.projectTab.newTab().setText("기타"))
 
 
-
         view.projectTab.tabGravity = TabLayout.GRAVITY_FILL
 
-        val pageradapter = IdeaPagerAdapter(childFragmentManager,view.projectTab.tabCount)
+        val pageradapter = ProjectPagerAdapter(childFragmentManager,view.projectTab.tabCount)
 
         view.projectViewpager.adapter = pageradapter
 

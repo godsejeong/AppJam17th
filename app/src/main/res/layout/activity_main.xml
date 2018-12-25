@@ -10,7 +10,8 @@
         android:id="@+id/mainLayout"
         android:layout_width="match_parent"
         android:orientation="vertical"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/navigationLayout">
     </FrameLayout>
 
     <View

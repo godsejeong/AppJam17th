@@ -16,7 +16,6 @@ class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
-
         try {
             val pref = getSharedPreferences("pref", Context.MODE_PRIVATE)
             token = pref.getString("token",null)

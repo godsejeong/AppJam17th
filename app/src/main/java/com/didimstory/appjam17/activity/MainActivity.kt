@@ -23,6 +23,8 @@ class MainActivity : AppCompatActivity() {
     private val FINSH_INTERVAL_TIME = 2000
     private var backPressedTime:Long = 0
 
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -35,8 +37,7 @@ class MainActivity : AppCompatActivity() {
         mainIdea.setTextColor(this.resources.getColor(R.color.colorPrimary))
 
         mainAddBtn.setOnClickListener {
-            startActivity(Intent(this@MainActivity, MainActivity::class.java))
-
+            startActivity(Intent(this@MainActivity, AddActivity::class.java))
         }
 
         mainIdea.setOnClickListener {
